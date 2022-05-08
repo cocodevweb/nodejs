@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "mathjs": "^10.5.1"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2"
   }
 }
