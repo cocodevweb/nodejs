@@ -1,6 +1,7 @@
  const fs = require("fs"); //fs <-- FileSystem
  const { multiply, divide } = require("./functions");
  const { chain } = require("mathjs");
+ const chalk  = require("chalk")
 
  // readFileSync <-- lire le contenu d'un fichier
  // WriteFileSync <-- écrire un fichier avec du contenu
@@ -19,3 +20,7 @@
  .multiply(2)
  .divide(5)
  .done())
+
+ console.log(chalk.bgRed("Erreurs !"));
+ console.log(chalk.green.bold("Succès !"));
+ console.log(chalk.yellow.underline("Avertissement !"));
